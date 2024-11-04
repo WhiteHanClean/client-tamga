@@ -1,0 +1,22 @@
+@import "../../../app/variables";
+
+.stepper {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+  .step {
+    border-bottom: 2px solid var(--main-text-color-first);
+    width: 100%;
+    padding-bottom: 4px;
+    p {
+      @include text-style(var(--main-text-color-first), 12px, 16px, 500);
+    }
+  }
+
+  .active_step {
+    border-bottom: 2px solid var(--main-text-color);
+    p {
+      @include text-style(var(--main-text-color), 12px, 16px, 500);
+    }
+  }
+}

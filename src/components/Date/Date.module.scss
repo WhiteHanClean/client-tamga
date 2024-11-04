@@ -1,0 +1,12 @@
+.date {
+  :global {
+    .ant-drawer {
+      .ant-drawer-content {
+        height: 110px !important;
+      }
+      .ant-drawer-content-wrapper {
+        height: 110px !important;
+      }
+    }
+  }
+}

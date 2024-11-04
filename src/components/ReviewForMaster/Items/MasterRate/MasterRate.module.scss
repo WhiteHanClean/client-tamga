@@ -1,0 +1,15 @@
+@import "../../../../app/variables";
+
+.master_rate {
+  margin: 24px 0 37px 0;
+  :global {
+    .ant-rate {
+      font-size: 48px;
+    }
+  }
+  p {
+    @include text-style(var(--main-text-color-first), 12px, 16px, 400);
+    text-align: center;
+    margin-top: 16px;
+  }
+}

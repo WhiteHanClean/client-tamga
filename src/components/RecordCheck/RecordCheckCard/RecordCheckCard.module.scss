@@ -1,0 +1,13 @@
+@import "../../../app/variables";
+
+.record_check_card {
+  padding-top: 16px;
+  h3 {
+    @include text-style(var(--main-text-color), 18px, 28px, 700);
+    margin-bottom: 4px;
+  }
+  h4 {
+    @include text-style(var(--main-text-color), 16px, 24px, 400);
+    margin-bottom: 16px;
+  }
+}

@@ -1,0 +1,50 @@
+@import "../../../app/variables";
+.secondary_char {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .secondary_character {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .secondary_character_items {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      h3 {
+        @include text-style(var(--main-text-color), 14px, 20px, 400);
+      }
+
+      .secondary_character_items_rate {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        :global {
+          .ant-rate {
+            font-size: 15px;
+            .ant-rate-star {
+              margin-inline-end: 4px;
+            }
+          }
+        }
+        p {
+          @include text-style(var(--main-text-color-first), 12px, 12px, 400);
+        }
+      }
+    }
+  }
+  p {
+    @include text-style(var(--main-text-color-first), 14px, 20px, 400);
+    align-self: start;
+    margin-left: auto;
+  }
+  :global {
+    .ant-checkbox-wrapper {
+      align-self: start;
+    }
+  }
+  .description {
+    @include text-style(var(--main-text-color), 14px, 20px, 400);
+  }
+}

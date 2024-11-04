@@ -1,0 +1,10 @@
+@import "../../../../app/variables";
+
+.service_edit_header {
+  h3 {
+    @include text-style(var(--main-text-color), 16px, 24px, 500);
+  }
+  h4 {
+    @include text-style(var(--main-text-color-first), 14px, 24px, 400);
+  }
+}

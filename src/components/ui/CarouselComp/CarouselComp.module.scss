@@ -1,0 +1,13 @@
+.carousel_comp {
+  padding-bottom: 30px;
+  :global {
+    .ant-carousel {
+      .slick-slider {
+        cursor: grab;
+        .slick-list {
+          overflow: visible;
+        }
+      }
+    }
+  }
+}

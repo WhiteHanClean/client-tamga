@@ -1,0 +1,35 @@
+@import "../../../../app/variables";
+
+.service_edit_card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  .service_edit_card_title {
+    display: flex;
+    flex-direction: column;
+    h3 {
+      @include text-style(var(--main-text-color), 16px, 24px, 400);
+    }
+    h4 {
+      @include text-style(var(--main-text-color-first), 14px, 24px, 400);
+    }
+  }
+  .service_edit_card_price {
+    align-self: start;
+    p {
+      @include text-style(var(--main-text-color), 16px, 24px, 400);
+    }
+  }
+  button {
+    :global {
+      .anticon {
+        color: rgba(0, 0, 0, 0.45);
+        svg {
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+  }
+}

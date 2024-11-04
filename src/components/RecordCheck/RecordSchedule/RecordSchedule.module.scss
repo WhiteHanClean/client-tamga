@@ -1,0 +1,27 @@
+@import "../../../app/variables";
+
+.details_schedule {
+  .details_schedule_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .details_schedule_title {
+      @include text-style(var(--main-text-color), 18px, 28px, 800);
+      margin: 0;
+      padding: 16px 0 0 0;
+    }
+  }
+  .details_schedule_resut {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-top: solid 1px #E3E7EB;
+    h3 {
+      @include text-style(var(--main-text-color), 16px, 24px, 400);
+    }
+    h2 {
+      @include text-style(var(--main-text-color), 18px, 28px, 700);
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@import "../../../../app/variables";
+
+.master_card {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--lgiht-border-color);
+  .master_card_character {
+    h3 {
+      font-size: 16px !important;
+      font-weight: 500 !important;
+    }
+  }
+}

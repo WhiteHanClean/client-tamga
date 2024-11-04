@@ -1,0 +1,30 @@
+@import "../../../app/variables";
+
+.mobile_btn {
+  padding: 0 16px;
+  max-width: 768px;
+  margin: 0 auto;
+  button {
+    width: 100%;
+    height: 56px;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--dark-green-color);
+    @include text-style(var(--main-text-clean), 16px, 24px, 500);
+    border-radius: 16px;
+  }
+  button:disabled {
+    background: var(--main-text-color-first);
+  }
+}
+
+.fixed {
+  width: 100%;
+  position: fixed;
+  margin: 0 auto;
+  left: 0;
+  bottom: 37px;
+  right: 0;
+}

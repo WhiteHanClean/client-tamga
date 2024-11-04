@@ -1,0 +1,9 @@
+@import "../../../app/variables";
+
+.title_content {
+  margin-top: 24px;
+  h2 {
+    @include text-style(var(--main-text-color), 20px, 24px, 700);
+    margin-bottom: 16px;
+  }
+}

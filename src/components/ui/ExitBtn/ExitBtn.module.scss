@@ -1,0 +1,8 @@
+@import "../../../app/variables";
+
+.exit_btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  @include text-style(var(--danger-text-color), 16px, 24px, 400);
+}

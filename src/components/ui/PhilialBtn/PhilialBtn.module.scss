@@ -1,0 +1,27 @@
+@import "../../../app/variables";
+
+.philial_btn {
+  min-height: 24px;
+  padding: 16px;
+  box-shadow: 0px 2px 14px 0px rgba(78, 80, 83, 0.16);
+  box-shadow: 0px 2px 14px 0px color(display-p3 0.3062 0.3118 0.3227 / 0.16);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 16px;
+  .philial_btn_title {
+    h3 {
+      @include text-style(var(--main-text-color), 16px, 24px, 500);
+    }
+    p {
+      @include text-style(var(--main-text-color-first), 14px, 20px, 400);
+    }
+  }
+  .philial_btn_tick {
+    display: flex;
+    align-items: center;
+    p {
+      @include text-style(var(--main-text-color-first), 16px, 24px, 400);
+    }
+  }
+}

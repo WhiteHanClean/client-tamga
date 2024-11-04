@@ -1,0 +1,25 @@
+.schedule {
+  overflow: hidden;
+  padding-bottom: 175px;
+  .schedule_drawer {
+    :global {
+      .ant-drawer {
+        .ant-drawer-content {
+          height: 277px !important;
+          .ant-drawer-header {
+            .ant-drawer-header-title {
+              .ant-drawer-close {
+                margin-inline-end: 0;
+                justify-content: flex-end;
+                align-self: start;
+              }
+            }
+          }
+        }
+        .ant-drawer-content-wrapper {
+          height: 277px !important;
+        }
+      }
+    }
+  }
+}

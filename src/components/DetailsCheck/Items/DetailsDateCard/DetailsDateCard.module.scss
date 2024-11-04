@@ -1,0 +1,27 @@
+@import "../../../../app/variables";
+
+.details_date_card {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 16px 0;
+  border-top: solid 0.5px #eeeff2;
+  border-bottom: solid 0.5px #eeeff2;
+  span {
+    border-radius: 12px;
+    display: inline-block;
+    padding: 8px;
+    background-color: #eeeff2;
+  }
+  .details_date_card_title {
+    p {
+      @include text-style(var(--main-text-color-first), 12px, 14px, 400);
+    }
+    h3 {
+      @include text-style(var(--main-text-color), 16px, 24px, 500);
+    }
+  }
+  button {
+    margin-left: auto;
+  }
+}

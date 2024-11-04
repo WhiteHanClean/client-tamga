@@ -1,0 +1,16 @@
+@import "../../../app/variables";
+
+.specialist_card {
+  padding: 12px;
+  margin: 0 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0px 2px 14px 0px rgba(78, 80, 83, 0.16);
+  box-shadow: 0px 2px 14px 0px color(display-p3 0.3062 0.3118 0.3227 / 0.16);
+  border-radius: 16px;
+  cursor: pointer;
+  p {
+    @include text-style(var(--main-text-color), 16px, 24px, 500);
+  }
+}

@@ -1,0 +1,13 @@
+@import "../../../../app/variables";
+
+.header_select {
+  position: relative;
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  width: 300px;
+  align-items: center;
+  h2 {
+    @include text-style(var(--main-text-color), 16px, 24px, 500);
+  }
+}

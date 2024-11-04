@@ -1,0 +1,36 @@
+@import "../../../../app/variables";
+
+.card_service {
+  display: flex;
+  gap: 16px;
+  .card_service_items {
+    h3 {
+      @include text-style(var(--main-text-color), 16px, 24px, 400);
+    }
+    h4 {
+      @include text-style(var(--main-text-color-first), 14px, 20px, 400);
+    }
+    p {
+      @include text-style(var(--main-text-color), 16px, 24px, 400);
+      margin-top: 20px;
+    }
+  }
+  .card_service_checkbox {
+    margin-left: auto;
+    :global {
+      .ant-checkbox-wrapper {
+        .ant-checkbox {
+          .ant-checkbox-inner {
+            width: 24px;
+            height: 24px;
+          }
+          .ant-checkbox-inner::after {
+            top: 47%;
+            width: 7.714286px;
+            height: 12.142857px;
+          }
+        }
+      }
+    }
+  }
+}

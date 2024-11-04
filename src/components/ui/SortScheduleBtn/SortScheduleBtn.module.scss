@@ -1,0 +1,22 @@
+@import "../../../app/variables";
+
+.sort {
+  display: flex;
+  gap: 8px;
+  max-width: 768px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 16px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  button {
+    padding: 6px 12px;
+    border-radius: 24px;
+    background: var(--border-color);
+    @include text-style(var(--main-text-color), 14px, 20px, 500);
+  }
+  .active {
+    background: var(--dark-green-color);
+    @include text-style(var(--main-text-clean), 14px, 20px, 500);
+  }
+}

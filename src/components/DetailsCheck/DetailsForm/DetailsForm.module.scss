@@ -1,0 +1,53 @@
+@import "../../../app/variables";
+
+.details_form {
+  margin-top: 16px;
+  :global {
+    .ant-form {
+      .ant-form-item {
+        .ant-input {
+          height: 56px !important;
+          padding: 6px 16px;
+          border-radius: 16px;
+          @include text-style(var(--main-text-color), 16px, 24px, 400);
+          min-height: 56px !important;
+        }
+        .ant-form-item-label {
+          .ant-form-item-required {
+            flex-direction: row-reverse;
+          }
+          .ant-form-item-required::before {
+            color: var(--main-text-color);
+            margin-inline-end: 0;
+            margin-inline-start: 4px;
+          }
+        }
+      }
+    }
+  }
+  .details_form_offert {
+    display: flex;
+    gap: 6px;
+    :global {
+      .ant-checkbox-wrapper {
+        align-self: baseline;
+        .ant-checkbox {
+          .ant-checkbox-input {
+            width: 20px;
+            height: 20px;
+          }
+          .ant-checkbox-inner {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+    p {
+      @include text-style(var(--main-text-color), 12px, 16px, 400);
+      span {
+        color: color(display-p3 0.0725 0.3075 0.9118);
+      }
+    }
+  }
+}

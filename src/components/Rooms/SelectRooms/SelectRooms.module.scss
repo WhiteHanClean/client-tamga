@@ -1,0 +1,15 @@
+@import "../../../app/variables";
+
+.select_rooms {
+  display: flex;
+  flex-direction: column;
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 16px 0;
+    border-bottom: 0.5px solid #e3e7eb;
+    @include text-style(var(--main-text-color), 16px, 24px, 400);
+  }
+}

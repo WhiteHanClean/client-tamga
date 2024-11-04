@@ -1,0 +1,36 @@
+@import "../../../../app/variables";
+
+.date_accordion {
+  max-width: 768px;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  :global {
+    .ant-collapse {
+      background-color: inherit;
+      border-radius: 16px;
+      .ant-collapse-item {
+        .ant-collapse-header {
+          flex-direction: row-reverse;
+          .ant-collapse-header-text {
+            @include text-style(var(--main-text-color), 16px, 24px, 500);
+          }
+          .ant-collapse-expand-icon {
+            .anticon {
+              svg {
+                width: 14px;
+                height: 14px;
+                border-block-width: 2.5px 0;
+                border-inline-width: 2.5px 0;
+                transform: rotate(-90deg) !important;
+              }
+            }
+          }
+        }
+        .ant-collapse-content {
+          border-top: none;
+          border-radius: 16px;
+        }
+      }
+    }
+  }
+}

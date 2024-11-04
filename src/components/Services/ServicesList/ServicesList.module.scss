@@ -1,0 +1,13 @@
+@import "../../../app/variables";
+
+.services {
+  .services_title {
+    margin-top: 16px;
+    @include text-style(var(--main-text-color), 16px, 24px, 500);
+  }
+  .services_list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+}
